@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.interswitch:interswitch-java:0.0.1">
+    <CLASSES>
+      <root url="jar://D:/m2/repository/com/interswitch/interswitch-java/0.0.1/interswitch-java-0.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/m2/repository/com/interswitch/interswitch-java/0.0.1/interswitch-java-0.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/m2/repository/com/interswitch/interswitch-java/0.0.1/interswitch-java-0.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

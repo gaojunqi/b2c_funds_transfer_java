@@ -2,6 +2,8 @@ package example;
 
 import com.interswitch.techquest.auth.Interswitch;
 import com.interswitch.transfer.FundsTransfer;
+import com.interswitch.transfer.codec.Bank;
+import com.interswitch.transfer.codec.BankResponse;
 
 /**
  * 
@@ -42,6 +44,28 @@ public class AccountValidation {
     public static void main(String[] args) {
         
         FundsTransfer transfer = new FundsTransfer(clientId, clientSecret, Interswitch.ENV_SANDBOX);
+
+        try {
+
+            BankResponse bankResponse = transfer.fetchBanks();
+
+            Bank[] bank = bankResponse.getBanks(); // a bank array of all banks
+
+            if (bank instanceof Object) {
+
+                // successful
+                Bank testBank = bank[0]; // bank at index 0
+
+                String cbnCode = testBank.getCbnCode(); // Central bank code
+                String bankName = testBank.getBankName(); // bank name:
+                String bankCode = testBank.getBankCode(); // bankcode in alphabetical form: UBA, GTB, FBN
+            }
+        }
+        catch(Exception ex) {
+            //
+            ex.printStackTrace();
+        }
+
     }
 
 }

@@ -41,9 +41,11 @@ public class AppDriver {
      * @clientSecret:
      * These are for the sandbox environment.
      */
-    private final static String clientId = "IKIA6570778A3484D6F33BC7E4165ADCA6CF06B2860A";
-    private final static String clientSecret = "DXfUwpuIvMAKN84kv38uspqGOsStgFS0oZMjU7bPwpU=";
+//    private final static String clientId = "IKIA6570778A3484D6F33BC7E4165ADCA6CF06B2860A";
+//    private final static String clientSecret = "DXfUwpuIvMAKN84kv38uspqGOsStgFS0oZMjU7bPwpU=";
 
+    private final static String clientId = "IKIA2EFBE1EF63D1BBE2AF6E59100B98E1D3043F477A";
+    private final static String clientSecret = "uAk0Amg6NQwQPcnb9BTJzxvMS6Vz22octQglQ1rfrMA=";
     public static void main(String[] args) {
 
         /**
@@ -78,7 +80,7 @@ public class AppDriver {
          * 
          */
 
-        FundsTransfer transfer = new FundsTransfer(clientId, clientSecret, Interswitch.ENV_SANDBOX);
+        FundsTransfer transfer = new FundsTransfer(clientId, clientSecret, Interswitch.ENV_DEV);
         // FundTransfer transfer = new FundTransfer(clientId, clientSecret, Interswitch.ENV_PRODUCTION); // Production
         // FundTransfer transfer = new FundTransfer(clientId, clientSecret); // Defaults to Sandbox
 
